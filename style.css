@@ -1,0 +1,16 @@
+
+/* Minimal styles placeholder - keep your existing CSS if you prefer */
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#333}
+.container{width:90%;max-width:1100px;margin:0 auto}
+.hero{position:relative;min-height:50vh;background:url('images/hero.jpg') center/cover no-repeat;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center}
+h1,h2{margin:0 0 1rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}
+.card img{display:block;width:100%;height:180px;object-fit:cover}
+.card .p{padding:14px}
+.btn{display:inline-block;padding:10px 16px;border:2px solid #e63946;color:#e63946;border-radius:6px;text-decoration:none;font-weight:700}
+.btn.fill{background:#e63946;color:#fff}
+footer{background:#f5f5f5;margin-top:40px;padding:20px 0}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:1}
+nav .container{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+nav a{margin-left:16px;text-decoration:none;color:#333;font-weight:700}
