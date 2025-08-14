@@ -1,17 +1,320 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Paradis du Geek – Shop</title><link rel="stylesheet" href="css/style.css"></head><body>
-<nav><div class="container"><div>🎮 Paradis du Geek</div>
-<div><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="shop.html"">Shop</a><a href="tarifs.html">Tarifs</a><a href="contact.html">Contact</a></div></div></nav>
-<section class="container" style="padding:30px 0">
-<h2>La Boutique</h2>
-<div class="grid">
-<div class="card"><img src="images/shop-1.jpg" alt=""><div class="p"><strong>Produit 1</strong><br>99 €</div></div>
-<div class="card"><img src="images/shop-2.jpg" alt=""><div class="p"><strong>Produit 2</strong><br>109 €</div></div>
-<div class="card"><img src="images/shop-3.jpg" alt=""><div class="p"><strong>Produit 3</strong><br>119 €</div></div>
-<div class="card"><img src="images/shop-4.jpg" alt=""><div class="p"><strong>Produit 4</strong><br>129 €</div></div>
-</div>
-</section>
-<footer><div class="container">© 2025 Paradis du Geek</div></footer>
-<script src="js/script.js"></script>
-</body></html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop – Paradis du Geek</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Additional shop styles */
+      .product-card img {
+        height: 220px;
+        object-fit: cover;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container wrapper">
+        <a class="brand" href="index.html"><span class="logo">🎮</span> Paradis du Geek</a>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header style="background-color:#212529; color:#fff; padding:4rem 0; margin-top:4rem; text-align:center;">
+      <div class="container">
+        <h1 class="fw-bold" style="margin-bottom:0.5rem;">La Boutique</h1>
+        <p>Découvrez nos sélections d’appareils reconditionnés et neufs</p>
+      </div>
+    </header>
+    <main style="padding:4rem 0;">
+      <div class="container">
+        <!-- Filter / Categories (placeholder for future dynamic filtering) -->
+        <div style="text-align:center; margin-bottom:2rem;">
+          <h2 class="fw-bold" style="margin-bottom:1rem;">Catégories</h2>
+          <div style="display:inline-flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+            <a href="#reconditionnes" class="btn btn-outline-danger">Reconditionnés</a>
+            <a href="#consoles" class="btn btn-outline-danger">Consoles &amp; Gaming</a>
+            <a href="#accessoires" class="btn btn-outline-danger">Accessoires</a>
+            <a href="#smartphones" class="btn btn-outline-danger">iPhone &amp; Mobile</a>
+            <a href="#pcmac" class="btn btn-outline-danger">PC &amp; Mac</a>
+          </div>
+        </div>
+        <!-- Reconditionnés -->
+        <section id="reconditionnes" style="margin:3rem 0;">
+          <h3 class="fw-bold" style="margin-bottom:1.5rem;">Appareils reconditionnés</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-reconditionnes.jpg" alt="PC portable reconditionné" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">PC portable reconditionné</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">399 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-reconditionnes.jpg" alt="iPhone reconditionné" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">iPhone reconditionné</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">299 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-reconditionnes.jpg" alt="Tablette reconditionnée" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Tablette reconditionnée</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">249 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-reconditionnes.jpg" alt="Console reconditionnée" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Console reconditionnée</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">199 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Consoles & Gaming -->
+        <section id="consoles" style="margin:3rem 0;">
+          <h3 class="fw-bold" style="margin-bottom:1.5rem;">Consoles &amp; Gaming</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-consoles.jpg" alt="Console de jeu" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">PlayStation 5</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">549 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-consoles.jpg" alt="Console de jeu" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Xbox Series X</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">499 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-consoles.jpg" alt="Console de jeu" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Nintendo Switch</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">329 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-consoles.jpg" alt="Console rétro" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Game Boy Color</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">149 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Accessoires -->
+        <section id="accessoires" style="margin:3rem 0;">
+          <h3 class="fw-bold" style="margin-bottom:1.5rem;">Accessoires</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-accessoires.jpg" alt="Casque gaming" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Casque gaming</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">79 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-accessoires.jpg" alt="Manette sans fil" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Manette sans fil</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">59 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-accessoires.jpg" alt="Clavier mécanique" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Clavier mécanique</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">119 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-accessoires.jpg" alt="Souris gaming" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Souris gaming</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">49 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- iPhone & Mobile -->
+        <section id="smartphones" style="margin:3rem 0;">
+          <h3 class="fw-bold" style="margin-bottom:1.5rem;">iPhone &amp; Mobile</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-mobile.jpg" alt="iPhone 13" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">iPhone 13</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">899 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-mobile.jpg" alt="Étui iPhone" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Étui iPhone</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">29 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-mobile.jpg" alt="Écouteurs sans fil" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Écouteurs sans fil</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">99 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-mobile.jpg" alt="Chargeur rapide" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Chargeur rapide</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">19 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PC & Mac -->
+        <section id="pcmac" style="margin:3rem 0;">
+          <h3 class="fw-bold" style="margin-bottom:1.5rem;">PC &amp; Mac</h3>
+          <div class="row">
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-pcmac.jpg" alt="Ordinateur de bureau" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Ordinateur de bureau</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">799 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-pcmac.jpg" alt="Ordinateur portable" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">MacBook Pro</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">1299 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-pcmac.jpg" alt="Écran 27 pouces" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Écran 27 pouces</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">199 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card product-card">
+                <img src="images/shop-pcmac.jpg" alt="Disque SSD 1 To" />
+                <div class="card-body">
+                  <h6 style="margin-bottom:0.5rem;">Disque SSD 1 To</h6>
+                  <p style="color:#e63946; font-weight:700; margin-bottom:0.5rem;">139 €</p>
+                  <a href="#" class="btn btn-danger" style="margin-top:auto;">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-6" style="display:flex; align-items:center;">
+            <span style="font-size:1.5rem; margin-right:0.5rem;">🎮</span>
+            <div>
+              <h5 style="margin:0; font-weight:700; color:#333;">Paradis du Geek</h5>
+              <p style="margin:0; color:#666;">51 rue marchande, 38200 Vienne</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <h6 style="font-weight:700; margin-bottom:0.5rem; color:#333;">Liens rapides</h6>
+            <ul style="list-style:none; padding:0; color:#666;">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h6 style="font-weight:700; margin-bottom:0.5rem; color:#333;">Contact</h6>
+            <p style="margin:0.3rem 0;">📞 04 27 69 18 37</p>
+            <p style="margin:0.3rem 0;"><a href="mailto:contact@paradisdugeek.com">✉️ contact@paradisdugeek.com</a></p>
+            <div style="margin-top:0.5rem; font-size:1.2rem;">
+              <a href="#" style="margin-right:0.5rem;">📘</a>
+              <a href="#" style="margin-right:0.5rem;">📸</a>
+              <a href="#">🎵</a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:1rem; color:#666;">
+          <small>&copy; <span id="year"></span> Paradis du Geek. Tous droits réservés.</small>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

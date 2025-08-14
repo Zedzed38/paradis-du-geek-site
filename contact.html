@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Paradis du Geek – Contact</title><link rel="stylesheet" href="css/style.css"></head><body>
-<nav><div class="container"><div>🎮 Paradis du Geek</div>
-<div><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="shop.html">Shop</a><a href="tarifs.html">Tarifs</a><a href="contact.html">Contact</a></div></div></nav>
-<section class="container" style="padding:30px 0">
-<h2>Contact</h2>
-<p>51 rue marchande, 38200 Vienne — 04 27 69 18 37 — contact@paradisdugeek.com</p>
-</section>
-<footer><div class="container">© 2025 Paradis du Geek</div></footer>
-<script src="js/script.js"></script>
-</body></html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Paradis du Geek</title>
+    <!-- Only include our custom stylesheet; external frameworks are removed -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Custom navigation bar consistent with other pages -->
+    <nav class="navbar">
+      <div class="container wrapper">
+        <a class="brand" href="index.html"><span class="logo">🎮</span> Paradis du Geek</a>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page header -->
+    <header style="background-color:#212529; color:#fff; padding:4rem 0; margin-top:4rem; text-align:center;">
+      <div class="container">
+        <h1 class="fw-bold" style="margin-bottom:0.5rem;">Contactez‑nous</h1>
+        <p style="font-size:1.1rem;">Nous sommes à votre écoute pour toute question ou demande de devis.</p>
+      </div>
+    </header>
+    <!-- Main content -->
+    <main style="padding:4rem 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2 class="fw-bold" style="margin-bottom:1rem;">Nos coordonnées</h2>
+            <p style="margin-bottom:1rem;">N’hésitez pas à nous rendre visite en magasin ou à nous contacter par téléphone ou e‑mail.</p>
+            <ul style="list-style:none; padding:0; margin-bottom:1rem;">
+              <li style="margin-bottom:0.5rem;">📍 51 rue marchande, 38200 Vienne</li>
+              <li style="margin-bottom:0.5rem;">📞 <a href="tel:+33427691837">04 27 69 18 37</a></li>
+              <li style="margin-bottom:0.5rem;">✉️ <a href="mailto:contact@paradisdugeek.com">contact@paradisdugeek.com</a></li>
+            </ul>
+            <h3 class="fw-bold" style="margin-bottom:0.5rem;">Horaires d’ouverture</h3>
+            <table style="margin-bottom:1rem; width:auto; border-collapse:collapse;">
+              <tbody>
+                <tr><td>Lundi – Vendredi</td><td style="padding-left:1rem;">09 h 30 – 18 h 30</td></tr>
+                <tr><td>Samedi</td><td style="padding-left:1rem;">10 h 00 – 17 h 00</td></tr>
+                <tr><td>Dimanche</td><td style="padding-left:1rem;">Fermé</td></tr>
+              </tbody>
+            </table>
+            <div style="font-size:1.4rem;">
+              <a href="#" style="margin-right:0.5rem;">📘</a>
+              <a href="#" style="margin-right:0.5rem;">📸</a>
+              <a href="#">🎵</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <h2 class="fw-bold" style="margin-bottom:1rem;">Envoyer un message</h2>
+            <form>
+              <label for="name">Nom *</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+              <label for="email">E‑mail *</label>
+              <input type="email" id="email" name="email" placeholder="Votre e‑mail" required />
+              <label for="subject">Sujet *</label>
+              <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required />
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+              <button type="submit" class="btn btn-danger">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-6" style="display:flex; align-items:center;">
+            <span style="font-size:1.5rem; margin-right:0.5rem;">🎮</span>
+            <div>
+              <h5 style="margin:0; font-weight:700; color:#333;">Paradis du Geek</h5>
+              <p style="margin:0; color:#666;">51 rue marchande, 38200 Vienne</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <h6 style="font-weight:700; margin-bottom:0.5rem; color:#333;">Liens rapides</h6>
+            <ul style="list-style:none; padding:0; color:#666;">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h6 style="font-weight:700; margin-bottom:0.5rem; color:#333;">Contact</h6>
+            <p style="margin:0.3rem 0;">📞 04 27 69 18 37</p>
+            <p style="margin:0.3rem 0;"><a href="mailto:contact@paradisdugeek.com">✉️ contact@paradisdugeek.com</a></p>
+            <div style="margin-top:0.5rem; font-size:1.2rem;">
+              <a href="#" style="margin-right:0.5rem;">📘</a>
+              <a href="#" style="margin-right:0.5rem;">📸</a>
+              <a href="#">🎵</a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:1rem; color:#666;">
+          <small>&copy; <span id="year"></span> Paradis du Geek. Tous droits réservés.</small>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

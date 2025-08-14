@@ -1,17 +1,149 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Paradis du Geek – Tarifs</title><link rel="stylesheet" href="css/style.css"></head><body>
-<nav><div class="container"><div>🎮 Paradis du Geek</div>
-<div><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="shop.html">Shop</a><a href="tarifs.html">Tarifs</a><a href="contact.html">Contact</a></div></div></nav>
-<section class="container" style="padding:30px 0">
-<h2>Tarifs indicatifs</h2>
-<div class="grid">
-<div class="card"><div class="p"><strong>Écran smartphone</strong><br>89 €</div></div>
-<div class="card"><div class="p"><strong>Batterie</strong><br>49 €</div></div>
-<div class="card"><div class="p"><strong>Nettoyage PC/Mac</strong><br>59 €</div></div>
-<div class="card"><div class="p"><strong>SSD + clonage</strong><br>129 €</div></div>
-</div>
-</section>
-<footer><div class="container">© 2025 Paradis du Geek</div></footer>
-<script src="js/script.js"></script>
-</body></html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarifs – Paradis du Geek</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      thead {
+        background-color: #f8f9fa;
+      }
+      th, td {
+        padding: 0.75rem 1rem;
+        border: 1px solid #dee2e6;
+        text-align: left;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container wrapper">
+        <a class="brand" href="index.html"><span class="logo">🎮</span> Paradis du Geek</a>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tarifs.html" class="active">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header style="background-color:#212529; color:#fff; padding:4rem 0; margin-top:4rem; text-align:center;">
+      <div class="container">
+        <h1 class="fw-bold" style="margin-bottom:0.5rem;">Tarifs</h1>
+        <p>Nos prix sont transparents et adaptés à chaque réparation. Les montants indiqués ci‑dessous sont donnés à titre indicatif.</p>
+      </div>
+    </header>
+    <main style="padding:4rem 0;">
+      <div class="container">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>À partir de</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Remplacement d’écran smartphone</td>
+                <td>Écran tactile et LCD OEM, main d’œuvre incluse</td>
+                <td>89 €</td>
+              </tr>
+              <tr>
+                <td>Changement de batterie smartphone</td>
+                <td>Batterie neuve garantie 12 mois</td>
+                <td>49 €</td>
+              </tr>
+              <tr>
+                <td>Nettoyage et dépoussiérage PC / Mac</td>
+                <td>Ouverture de l’ordinateur, nettoyage interne complet</td>
+                <td>59 €</td>
+              </tr>
+              <tr>
+                <td>Installation de disque SSD</td>
+                <td>Fourniture et installation d’un SSD, clonage des données</td>
+                <td>129 €</td>
+              </tr>
+              <tr>
+                <td>Réparation console (lecteur / connectique)</td>
+                <td>Diagnostic et remplacement de pièces défectueuses</td>
+                <td>79 €</td>
+              </tr>
+              <tr>
+                <td>Récupération de données</td>
+                <td>Analyse et récupération de fichiers supprimés ou perdus</td>
+                <td>Sur devis</td>
+              </tr>
+              <tr>
+                <td>Installation système / optimisation</td>
+                <td>Réinstallation Windows ou macOS, configuration et mises à jour</td>
+                <td>89 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:2rem;">
+          Les tarifs peuvent varier en fonction du modèle de l’appareil et du coût des pièces. Un devis précis vous sera proposé après diagnostic. Toutes nos réparations sont garanties.
+        </p>
+      </div>
+    </main>
+    <section style="background-color:#e63946; color:#fff; text-align:center; padding:4rem 0;">
+      <div class="container">
+        <h2 class="fw-bold" style="margin-bottom:1rem;">Un doute ? Demandez un devis gratuit !</h2>
+        <p style="font-size:1.1rem; margin-bottom:2rem;">
+          Contactez‑nous pour obtenir un prix détaillé sur la réparation ou l’optimisation de votre appareil.
+        </p>
+        <a href="tel:+33427691837" class="btn btn-light" style="margin-right:1rem;">📞 04 27 69 18 37</a>
+        <a href="contact.html" class="btn btn-outline-danger" style="background-color:transparent; color:#fff; border-color:#fff;">💬 Contact</a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-6" style="display:flex; align-items:center;">
+            <span style="font-size:1.5rem; margin-right:0.5rem;">🎮</span>
+            <div>
+              <h5 style="margin:0; font-weight:700; color:#333;">Paradis du Geek</h5>
+              <p style="margin:0; color:#666;">51 rue marchande, 38200 Vienne</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <h6 style="font-weight:700; margin-bottom:0.5rem; color:#333;">Liens rapides</h6>
+            <ul style="list-style:none; padding:0; color:#666;">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h6 style="font-weight:700; margin-bottom:0.5rem; color:#333;">Contact</h6>
+            <p style="margin:0.3rem 0;">📞 04 27 69 18 37</p>
+            <p style="margin:0.3rem 0;"><a href="mailto:contact@paradisdugeek.com">✉️ contact@paradisdugeek.com</a></p>
+            <div style="margin-top:0.5rem; font-size:1.2rem;">
+              <a href="#" style="margin-right:0.5rem;">📘</a>
+              <a href="#" style="margin-right:0.5rem;">📸</a>
+              <a href="#">🎵</a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:1rem; color:#666;">
+          <small>&copy; <span id="year"></span> Paradis du Geek. Tous droits réservés.</small>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
